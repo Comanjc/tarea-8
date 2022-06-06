@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tarea-8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <div class="container-sm">
+            <div class="row ">
+
+                <div class="col-4 border border-dark mt-3">
+                    <form>
+                        <h1 class="text-center text-danger mt-2 fw-bolder mb-3">Alumnos Upeu</h1>
+                        <label class="ms-4 mb-2 form-label text-primary fw-lighter fw-bold">Escuela:</label> 
+                        <select class="form-select w-75 ms-4 mb-3 fw-light" name="escuela" id="uno">
+                            <option class="ms-2 fw-light mb-1" value="0">Seleccionar Escuela</option>
+                            <option class="ms-2 fw-light " value="Arquitectura">Arquitectura</option>
+                            <option class="ms-2 fw-light " value="Ambiental">Ing.Ambiental</option>
+                            <option class="ms-2 fw-light " value="Alimentos">Ing.Alimentos</option>
+                            <option class="ms-2 fw-light " value="Civil">Ing.Civil</option>
+                            <option class="ms-2 fw-light " value="Industrial">Ing.Industrial</option>
+                            <option class="ms-2 fw-light " value="Sistemas">Ing.Sistemas</option>
+                        </select>
+
+                        <label class="ms-4 mb-2 form-label text-primary fw-lighter fw-bold" >Apellidos y Nombres:</label>
+                        <input class="form-control w-75 ms-4 mb-3 fw-light" type="text" id="dos">
+                        <label class="ms-4 mb-2 form-label text-primary fw-lighter fw-bold">Correo</label>
+                        <input type="email" class="form-control w-75 ms-4 mb-3 fw-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label class="ms-4 mb-2 form-label text-primary fw-lighter fw-bold">Celular</label>
+                        <input class="form-control w-75 ms-4 fw-light" type="number" pattern="[0-9]{9}" id="cuatro">
+                        <div class="d-grid">
+                            <button class="form-control offset-md-5 w-50 mb-md-5 mt-3 btn-outline-danger p-1" id="enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="container-fluid col-8 border border-dark mt-3">
+                    <table border="1" class="w-100 mt-3">
+                        <thead class="bg-danger bg-opacity-20 text-center">
+                            <tr>
+                                <th class="p-2 border border-dark">#</th>
+                                <th class="p-2 border border-dark">Escuela</th>
+                                <th class="p-2 border border-dark">Apellido y Nombre</th>
+                                <th class="p-2 border border-dark">Correo</th>
+                                <th class="p-2 border border-dark">Telefono</th>
+                                <th class="p-2 border border-dark">Operaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-primary bg-opacity-10 text-center border border-dark" id="tabla">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/tablejs.js"></script>
+
+    </body>
+</html>
